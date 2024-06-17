@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------input title-------------->
+    <title>Project-Milestone</title>
+    <!---------------allow the file to have access to the css sheet to add design-------------->
+    <link   rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbe3248231.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    
+    
+<div id="header">
+    <div class="container">
+        <!---------------creating the navigation menu-------------->
+        <nav>
+            <img src="images/38542001-designstyle-boots-o.png" class="logo">
+            <ul>
+                <!---------------create 3 pages-------------->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!---------------first page header text and design-------------->
+        <div class="header-text">
+            <!---------------add new text font to make it more interesting-------------->
+            <h1 style="font-family: Georgia;">Information Technology/Cybersecurity</h1>
+            <div style="position: relative;">
+            <!---------------add and adjust background image to fit the page-------------->
+                <img src="images/images.jpg" width="1123" height="701" style="position: absolute; right: 250px; top: 55px;">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------------about-------------->
+<div id="about">
+    <div class="container">
+        <!---------------copy navigation menu from Home page to About page-------------->
+        <nav>
+            <ul>
+                <!---------------implement the navigation bar to be linked to all 3 pages-------------->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/thumbnail.png">
+            </div>
+            <!---------------create 3 paragraphs for background, experience, and goals-------------->
+            <div class="about-col-2">
+                <h1 class="sub-title" style="font-family: Georgia;">About Me</h1>
+                <p style="font-family: Georgia;">I am a first generation American citizen and have lived in Georgia my entire life. Coming from a middle eastern family and growing up in America, I’ve learned from two very different cultures and have found a love for learning and trying new things.  I grew up in the generation that began with flip phones and gameboys, so because of that, I love playing games. I originally came to Kennesaw state to pursue an education in Game Design, but as I spent more time and took more classes, I found that I would rather have that as a hobby than a career. Now, I am pursuing a degree in the field of IT, specifically Cybersecurity.  </p>
+                <br>
+                <p style="font-family: Georgia;">When I first came to Kennesaw, I was terrified of being on campus. The year I enrolled was the year before covid happened, so because of that, meeting new people and trying to be social was harder than it used to be. Thankfully, as soon as I began taking classes, I made friends and began my college life. Going into my third year, I absolutely love being on campus and hanging out with the friends I have made. The classes were not that interesting at first, but once I changed my major, I began loving all the classes. Learning about how to use, operate, and fix computers is something I found that I am really interested in now. I now know some different coding languages like C#, Java, Python, and Html. </p>
+                <br>
+                <p style="font-family: Georgia;">My goal for my college career is to get my degree in the next year and a half. In a way, I am sad that my college career is getting closer to finishing, but I am glad that I can finally be done and find a job. I have several different jobs that I am hoping for, but in general, I just hope to find a well paying job where I can buy a house one day. Once I am able to find a job, I would like to start working on creating a game in my free time as a fun hobby. I have always loved playing games, so being able to make one is a dream I have had for as long as I can remember. Having been inspired by so many different games, I want to put a little bit of everything that I grew up and loved into one game that I feel many would also love. My dream is to help the next generation fulfill their dreams in tech, whether it be in something more technical or creative, I wholeheartedly believe that it would be a great idea to start kids off young to help catch them up to constant advancements in the fields and to aid in them finding what they wish to pursue in life. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <!---------------copy the navigation menu again from the Home page to Contact page-------------->
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="contact-left">
+                <img src="images/istockphoto-1376339349-612x612.jpg">
+                <!---------------Include contact info and add social media links for reference-------------->
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aazarin1@students.kennesaw.edu</p>
+                <p><i class="fa-solid fa-phone"></i>678-558-9401</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-left">
+                <!---------------create a contact form in which user can input information and submit for me to recieve-------------->
+                <form class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------allow html page to connect with node.js to send/recieve emails-------------->
+<script src="app.js"></script>
+</body>   
+</html>
